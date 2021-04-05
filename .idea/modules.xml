@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_kosbank.iml" filepath="$PROJECT_DIR$/.idea/modules/android_kosbank.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android_kosbank.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android_kosbank.app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/git3.iml" filepath="$PROJECT_DIR$/.idea/modules/git3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/git3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/git3.app.iml" />
+>>>>>>> master
     </modules>
   </component>
 </project>

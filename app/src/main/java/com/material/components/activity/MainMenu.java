@@ -336,6 +336,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.material.components.kosbank.*;
+
 public class MainMenu extends AppCompatActivity {
 
     private RecyclerView recycler, search_recycler;
@@ -443,6 +445,20 @@ public class MainMenu extends AppCompatActivity {
         items.add(new Item(101, search.Text, "입출금계좌 조회", MnType.SUB, BottomNavigationBasic.class));
         items.add(new Item(102, search.Text, "Shifting", MnType.SUB, BottomNavigationShifting.class));
 
+        Item fund = new Item(28010, "펀드", R.drawable.ic_monetization_on, MnType.HEAD);
+        items.add(fund);
+        items.add(new Item(28011, fund.Text, "펀드목록", MnType.SUB, FundList.class));
+        items.add(new Item(28012, fund.Text, "펀드등록", MnType.SUB, FundAdd.class));
+        items.add(new Item(28013, fund.Text, "펀드상세페이지", MnType.SUB, FundDetail.class));
+        items.add(new Item(28014, fund.Text, "펀드구매페이지", MnType.SUB, FundBuy.class));
+
+        Item service = new Item(30010, "고객센터", R.drawable.ic_subject, MnType.HEAD);
+        items.add(service);
+        items.add(new Item(30011, service.Text, "공지사항", MnType.SUB, Notice.class));
+        items.add(new Item(30012, service.Text, "고객상담", MnType.SUB, Notice.class));
+        items.add(new Item(30013, service.Text, "글상세페이지", MnType.SUB, NoticeDetail.class));
+        
+
         Item bn = new Item(100, "Bottom Navigation", R.drawable.ic_view_column, MnType.HEAD);
         items.add(bn);
         items.add(new Item(101, bn.Text, "Basic", MnType.SUB, BottomNavigationBasic.class));
@@ -457,11 +473,6 @@ public class MainMenu extends AppCompatActivity {
         items.add(new Item(108, bn.Text, "Shop", MnType.SUB, BottomNavigationShop.class));
         items.add(new Item(108, bn.Text, "Small", MnType.SUB, BottomNavigationSmall.class));
         items.add(new Item(108, bn.Text, "Main", MnType.SUB, BottomNavigationMain.class));
-
-        Item test11 = new Item(100, "test11", R.drawable.ic_view_column, MnType.HEAD);
-        items.add(test11);
-        items.add(new Item(101, bn.Text, "test11-1", MnType.SUB, BottomNavigationBasic.class));
-        items.add(new Item(102, bn.Text, "test11-1", MnType.SUB, BottomNavigationShifting.class));
 
 
         Item bs = new Item(200, "Bottom Sheet", R.drawable.ic_call_to_actio, true, MnType.HEAD);

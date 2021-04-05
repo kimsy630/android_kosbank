@@ -577,6 +577,31 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".kosbank.FundList"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kosbank.FundAdd"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kosbank.FundDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kosbank.FundBuy"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kosbank.Notice"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".kosbank.NoticeDetail"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
             android:name=".activity.login.LoginSimpleDark"
             android:screenOrientation="portrait" />
         <activity
